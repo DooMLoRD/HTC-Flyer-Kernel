@@ -1,0 +1,8 @@
+cd main_kernel
+echo "----->>> Compiling Kernel"
+./kernel_make
+echo "----->>> fetching zImage"
+cp arch/arm/boot/zImage ../final_files/.
+echo "----->>> fetching wifi module"
+cp drivers/net/wireless/bcm4329_204/bcm4329.ko ../final_files/.
+echo "----->>> DONE"
